@@ -1,7 +1,7 @@
 BCrypt client salt utility
 ====================
 
-<p>BCryptClientSalt is a utility for creating deterministic salts for use with BCrypt. This allows clients to ask a 
+<p>BCryptClientSalt is a java utility for creating deterministic salts for use with BCrypt. This allows clients to ask a 
 server for the salt and then perform the BCrypt hashing on a password before sending the hashed password over the 
 wire to the server. This prevents the server from accidentally leaking the plaintext password, as well as putting the 
 burden of performing the hashing work on the client.</p>
