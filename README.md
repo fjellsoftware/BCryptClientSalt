@@ -59,3 +59,14 @@ public class ClientSaltDemonstration {
   }
 }
 ```
+
+## Artifacts
+
+_**Java 8+** maven artifact:_
+```xml
+<dependency>
+    <groupId>com.fjellsoftware.bcryptclientsalt</groupId>
+    <artifactId>bcryptclientsalt</artifactId>
+    <version>1.1</version>
+</dependency>
+```
