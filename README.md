@@ -6,6 +6,10 @@ server for the salt and then perform the BCrypt hashing on a password before sen
 wire to the server. This prevents the server from accidentally leaking the plaintext password, as well as putting the 
 burden of performing the hashing work on the client.</p>
 
+<b>IMPORTANT: the already-hashed password should be hashed again on the server.</b> It is not necessary to use a 
+password-hashing function like BCrypt as the second hash function that runs on the server, something like regular 
+SHA-256 is fine. 
+
 <p>Generating the salt works by supplying a service identifier, for example a fully qualified domain name like 
 retail-demo.loppi.io, and a service-unique username, for example john_doe_465 or john.doe@loppi.io. 
 These two strings are concatenated, and then hashed with SHA-256, and from the result, the first 16 bytes are 
